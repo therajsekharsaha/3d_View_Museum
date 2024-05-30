@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#panorama-container {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+#panorama-container:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}
+
+/* Add this CSS to your stylesheet or inline style */
+/* .description-container {
+    max-height: 50px;
+    overflow-y: auto;
+} */
+
+/* Style the scrolling description */
+.description-scroll {
+    max-height: 350px;
+    /* Adjust the maximum height as needed */
+    overflow: auto;
+    padding: 10px;
+    /* Add padding for better appearance */
+}
+
+.image-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+}
